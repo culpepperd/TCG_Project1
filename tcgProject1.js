@@ -13,6 +13,58 @@ var card = {
 	// method to defend, receive damage and break
 };
 
+// hero object
+var hero = {
+	name: "Daniel",
+	health: 40,
+	attribute: "Guardian",
+	defeated: false
+};
+
+// equipment object
+var equipment = {
+	name: "Helm of Righteousness",
+	defPwr: 7,
+	broken: false
+};
+
+// weapon object
+var weapon = {
+	name: "Rayalda's Gift",
+	speed: 5,
+	atkPwr: 10,
+	defPwr: 4,
+	broken: false
+};
+
+// attackAction object
+var attackAction = {
+	name: "Dominate",
+	cost: 3,
+	effect: "Destroy opponent's equipment.",
+	maxCopies: 1,
+	used: false
+};
+
+// attackReaction object
+var attackReaction = {
+	name: "Subtle Slip",
+	cost: 1,
+	effect: "Add +1 power to current attack action card.",
+	maxCopies: 4,
+	used: false
+};
+
+// defenseReaction object
+var defenseReaction = {
+	name: "Dodge Roll",
+	cost: 2,
+	effect: "Decrease oncoming attack by 2 power.",
+	maxCopies: 4,
+	used: false
+};
+
+
 for (var prop in card) {
 	console.log(prop + ": " + card[prop]);
 }
