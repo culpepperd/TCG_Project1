@@ -15,14 +15,27 @@ var card = {
 
 // hero object
 var hero = {
+	type: "Hero card",
 	name: "Daniel",
 	health: 40,
 	attribute: "Guardian",
 	defeated: false
 };
 
+// companion object
+var companion = {
+	type: "Companion card",
+	name: "Jack Shepard",
+	attribute: "Land Beast",
+	health: 15,
+	effect: "Provides designated hero with +3 power.",
+	altEffect: "When called upon, can apply 1 sneak damage (sneak damage is unblockable).",
+	defeated: false
+}
+
 // equipment object
 var equipment = {
+	type: "Equipment card",
 	name: "Helm of Righteousness",
 	defPwr: 7,
 	broken: false
@@ -30,6 +43,7 @@ var equipment = {
 
 // weapon object
 var weapon = {
+	type: "Weapon card",
 	name: "Rayalda's Gift",
 	speed: 5,
 	atkPwr: 10,
@@ -39,6 +53,7 @@ var weapon = {
 
 // attackAction object
 var attackAction = {
+	type: "Attack Action card",
 	name: "Dominate",
 	cost: 3,
 	effect: "Destroy opponent's equipment.",
@@ -48,6 +63,7 @@ var attackAction = {
 
 // attackReaction object
 var attackReaction = {
+	type: "Attack Reaction card",
 	name: "Subtle Slip",
 	cost: 1,
 	effect: "Add +1 power to current attack action card.",
@@ -57,6 +73,7 @@ var attackReaction = {
 
 // defenseReaction object
 var defenseReaction = {
+	type: "Defense Reaction card",
 	name: "Dodge Roll",
 	cost: 2,
 	effect: "Decrease oncoming attack by 2 power.",
@@ -64,7 +81,13 @@ var defenseReaction = {
 	used: false
 };
 
+var cardTypes = [hero, equipment, weapon, attackAction, attackReaction, defenseReaction];
 
+console.log(hero.name + "'s weapon is called, " + weapon.name + ", and his companion's name is " + companion.name + ".");
+
+/*
+// for/in loop to print each property in card object
 for (var prop in card) {
 	console.log(prop + ": " + card[prop]);
 }
+*/
