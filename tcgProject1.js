@@ -81,13 +81,44 @@ var defenseReaction = {
 	used: false
 };
 
-var cardTypes = [hero, equipment, weapon, attackAction, attackReaction, defenseReaction];
+var cardTypes = [hero.name, companion.name, equipment.name, weapon.name, attackAction.name, attackReaction.name, defenseReaction.name];
 
 console.log(hero.name + "'s weapon is called, " + weapon.name + ", and his companion's name is " + companion.name + ".");
 
-/*
+for (var i = 0; i < cardTypes.length; i++) {
+	console.log(cardTypes[i]);
+}
+
+
 // for/in loop to print each property in card object
 for (var prop in card) {
 	console.log(prop + ": " + card[prop]);
 }
-*/
+
+for (var prop in hero) {
+	console.log(prop + ": " + hero[prop]);
+}
+
+for (var prop in companion) {
+	console.log(prop + ": " + companion[prop]);
+}
+
+for (var prop in equipment) {
+	console.log(prop + ": " + equipment[prop]);
+}
+
+for (var prop in weapon) {
+	console.log(prop + ": " + weapon[prop]);
+}
+
+for (var prop in attackAction) {
+	console.log(prop + ": " + attackAction[prop]);
+}
+
+for (var prop in attackReaction) {
+	console.log(prop + ": " + attackReaction[prop]);
+}
+
+for (var prop in defenseReaction) {
+	console.log(prop + ": " + defenseReaction[prop]);
+}
