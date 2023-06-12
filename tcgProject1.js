@@ -1,3 +1,5 @@
+// There is still time
+
 // card object
 var card = {
 	name: "Mask of Momentum",
