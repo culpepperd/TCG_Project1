@@ -12,6 +12,24 @@ var rightBound = [4, 9, 14, 19];
 // Left boundary
 var leftBound = [0, 5, 10, 15];
 
+// player1 object
+var p1 = {
+	name: "Player 1",
+	health: 5,
+	power: 1,
+	defense: 2,
+	startLocation: 2,
+	isDead: false,
+	p1Turn: true,
+	attacking: false,
+	defending: false,
+	canAttack: false
+	// forward method
+	// backward method
+	// left method
+	// right method
+};
+
 // card object
 var card = {
 	name: "Mask of Momentum",
