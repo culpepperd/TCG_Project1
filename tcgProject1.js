@@ -1,5 +1,17 @@
 // There is still time
 
+// top boundary
+var topBound = [15, 16, 17, 18, 19];
+
+// bottom boundary
+var bottomBound = [0, 1, 2, 3, 4];
+
+// Right boundary
+var rightBound = [4, 9, 14, 19];
+
+// Left boundary
+var leftBound = [0, 5, 10, 15];
+
 // card object
 var card = {
 	name: "Mask of Momentum",
